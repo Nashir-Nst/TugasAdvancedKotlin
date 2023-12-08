@@ -31,7 +31,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <EditText
                 android:id="@+id/edt_email_login"
@@ -39,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="Autofill,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
             <EditText
                 android:id="@+id/edt_password_login"
@@ -47,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Password"
                 android:inputType="textPassword"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="Autofill,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
             <TextView
                 android:id="@+id/forgot_password"
@@ -56,16 +57,18 @@
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/black"
                 android:text="Forgot Password?"
-                android:textAlignment="textEnd" />
+                android:textAlignment="textEnd"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/btn_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:textColor="#EFEBEB"
                 android:backgroundTint="@color/biru"
-                android:text="Login" />
+                android:text="Login"
+                android:textColor="#EFEBEB"
+                tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,VisualLintButtonSize" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -73,7 +76,8 @@
                 android:layout_marginTop="30dp"
                 android:backgroundTint="@color/black"
                 android:text="New User?"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/tv_to_register"
@@ -83,7 +87,8 @@
                 android:text="Register Here"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 

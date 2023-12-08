@@ -1,11 +1,8 @@
 package com.nashir.tugaskotlinend
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.widget.Button
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.nashir.tugaskotlinend.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

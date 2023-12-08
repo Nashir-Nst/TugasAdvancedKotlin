@@ -10,6 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.nashir.tugaskotlinend"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -45,15 +46,20 @@ dependencies {
 
     //    ktx
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    //noinspection GradleDependency
     implementation ("androidx.activity:activity-ktx:1.3.1")
 
     val room_version = "2.5.0"
+    //noinspection GradleDependency
     implementation ("androidx.room:room-runtime:$room_version")
+    //noinspection GradleDependency
     implementation ("androidx.room:room-ktx:$room_version")
+    //noinspection GradleDependency
     annotationProcessor ("androidx.room:room-compiler:$room_version")
 
 
 
+    //noinspection GradleDependency
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")

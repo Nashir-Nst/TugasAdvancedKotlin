@@ -20,7 +20,7 @@
         app:layout_constraintBottom_toTopOf="@+id/text1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="NotSibling" />
+        tools:ignore="HardcodedText,NotSibling,SpUsage,TextSizeCheck" />
 
     <TextView
         android:id="@+id/text2"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="DuplicateIds,MissingConstraints" />
+        tools:ignore="DuplicateIds,HardcodedText,MissingConstraints,SpUsage,TextSizeCheck" />
 
     <ImageView
         android:id="@+id/image1"
@@ -47,7 +47,8 @@
         app:layout_constraintBottom_toTopOf="@+id/btnstart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/image2"
@@ -56,7 +57,8 @@
         android:src="@drawable/bgbawahtamplan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,VisualLintBounds" />
 
     <Button
         android:id="@+id/btnstart"
@@ -71,6 +73,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

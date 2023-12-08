@@ -13,23 +13,23 @@
         android:background="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints,VisualLintBounds">
 
 
         <TextView
             android:id="@+id/text_claimsertif"
             android:layout_width="232dp"
             android:layout_height="59dp"
+            android:layout_gravity="center"
             android:layout_marginStart="10dp"
             android:gravity="center"
-            android:layout_gravity="center"
             android:text="Daftar Rumah Sakit di Depok"
             android:textColor="@color/white"
-            android:textSize="18dp"
+            android:textSize="14dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage"
             tools:layout_editor_absoluteY="0dp" />
 
         <ImageButton
@@ -37,12 +37,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end|center"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
             android:backgroundTint="@color/red"
             android:src="@drawable/baseline_add_24"
-            android:layout_marginBottom="25dp"
-            android:layout_marginRight="25dp"
             app:fabSize="normal"
-            tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+            tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck"
             tools:layout_editor_absoluteX="339dp"
             tools:layout_editor_absoluteY="7dp" />
 
@@ -59,6 +59,18 @@
         android:textColor="#EFEBEB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="HardcodedText,VisualLintButtonSize,VisualLintOverlap" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_hospital"
+        android:layout_width="365dp"
+        android:layout_height="578dp"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 

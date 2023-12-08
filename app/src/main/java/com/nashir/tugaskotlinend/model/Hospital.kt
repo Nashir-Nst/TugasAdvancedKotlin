@@ -1,3 +1,3 @@
 package com.nashir.tugaskotlinend.model
 
-data class Hospital()
+data class Hospital(val image:Int, val name:String, val alamat:String, val phonenumber:String)

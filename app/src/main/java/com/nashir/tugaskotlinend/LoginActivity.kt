@@ -1,11 +1,9 @@
 package com.nashir.tugaskotlinend
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.inputmethod.InputBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.nashir.tugaskotlinend.databinding.ActivityLoginBinding
-import com.nashir.tugaskotlinend.databinding.ActivityMainBinding
 import com.nashir.tugaskotlinend.utils.CustomSharePreferneces
 
 class LoginActivity : AppCompatActivity() {
@@ -23,19 +21,19 @@ class LoginActivity : AppCompatActivity() {
         loginClick()
     }
 
-        fun init() {
+        private fun init() {
             preferences = CustomSharePreferneces(this@LoginActivity)
         }
 
-        fun checkCondition() {
-            if (!preferences.getlogin(1).equals(0)) {
+        private fun checkCondition() {
+            if (preferences.getlogin(1) != 0) {
                 val intent = Intent(this@LoginActivity, HomeActivity::class.java)
                 startActivity(intent)
                 finish()
             }
         }
 
-        fun loginClick() {
+        private fun loginClick() {
            binding.btnLogin.setOnClickListener{
                preferences.saveLogin(1).let {
                    val intent = Intent(this@LoginActivity, HomeActivity::class.java)
