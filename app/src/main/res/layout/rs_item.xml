@@ -14,15 +14,15 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="125dp"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="6dp"
-            android:gravity="center_vertical">
+            android:padding="6dp">
 
             <ImageView
                 android:id="@+id/imageRs"
-                android:layout_width="101dp"
-                android:layout_height="100dp"
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/sentramedika"
                 tools:ignore="ContentDescription" />
@@ -41,7 +41,6 @@
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="RS. Sentra Medika"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText" />
@@ -50,7 +49,6 @@
                     android:id="@+id/alamat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Jl. Raya Jakarta-Bogor No.KM. 33 \nCisalak, Kec. Sukmajaya, Kota Depok, Jawa Barat 16416"
                     android:textSize="12sp"
                     tools:ignore="HardcodedText" />
 
@@ -58,10 +56,11 @@
                     android:id="@+id/phonenumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="081928289433"
+
                     android:textSize="16sp"
                     tools:ignore="HardcodedText" />
             </LinearLayout>
+
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
